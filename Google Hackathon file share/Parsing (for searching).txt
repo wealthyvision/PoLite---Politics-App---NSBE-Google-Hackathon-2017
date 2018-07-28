@@ -1,0 +1,7 @@
+Resources for parsing
+- HTML for 'web scrapping' (pull keywords from certain websites) 
+	http://python-guide-pt-br.readthedocs.io/en/latest/scenarios/scrape/
+- Open source for scrapping 
+	https://scrapy.org/
+- Addition information on parsing 
+	https://docs.python.org/2/library/htmlparser.html

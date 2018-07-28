@@ -1,0 +1,24 @@
+
+
+    from bs4 import BeautifulSoup
+	import urllib2
+
+	
+	While True:
+		Welcome_Statement = print ( ‘Hello! Welcome to the Politics app V1.0 :))))))’)
+
+		User_Input = input ( ‘What would you like to research? : )
+
+		if user_catchoice = legislative
+
+		webpage = urllib2.urlopen(‘govtrack.us’)
+		soup = BeautifulSoup(webpage,'html.parser')
+		
+		for anchor in soup.find_all('a'):
+	    	print(anchor.get('href', '/'))
+		print soup.prettify()[0:1000]
+		
+		from IPython.display import HTML
+		HTML('<iframe src=http://www.govtrack.us width=700 height=500></iframe>')
+		if ():
+			break

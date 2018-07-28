@@ -1,0 +1,37 @@
+import sys
+#sys.path.append('C:/Python34/hackathon.py')
+sys.path = ['c:/users/kyle/anaconda3/lib/site-packages'] + sys.path
+#sys.path.append('c:/users/kyle/anaconda3/lib/site-packages')
+#print(sys.path)
+
+### this is the parcer###
+from lxml import html
+import requests
+
+
+
+
+
+Welcome_statement = print ('Hello! welcome to Politics app v1.0 :))))))')
+###categories = [legislative, social, bills]
+
+
+###user_catchoice = input('Which catagory would you like to review? Legislative, social issues, or bills?')
+user_input = input('What would you like to research?:')
+
+###if user_catchoice = legislative
+### Get news for social issues 
+###page = requests.get('http://www.huffingtonpost.com/search?keywords=' + user_input + '&sortBy=recency&sortOrder=desc')
+###tree = html.fromstring(page.content)
+###print(page.content[:100])
+
+###else
+### Get news for legislation 
+page = requests.get('https://www.congress.gov/search?q={%22congress%22:%22115%22,%22source%22:%22legislation%22,%22search%22:%22' + user_input + '%22}&searchResultViewType=expanded')
+tree = html.fromstring(page.content)
+print(page.content[:100])
+
+
+
+#https://www.congress.gov/search?q={%22congress%22:%22115%22,%22source%22:%22legislation%22,%22search%22:%22user_input%22}&searchResultViewType=expanded
+
